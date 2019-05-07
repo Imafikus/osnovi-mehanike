@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 """
-? Telo u odnisu na zemlju i sunce
+? Kretanje tela u odnosu na Zemlju i Sunce
 """
 
 C_AU = 1.5e11 #? Astronomska jedinica
@@ -30,19 +30,23 @@ def main():
     V0y = Vz + 1000 #? km / s 30km/s je brzina zemlje
     V0x = 0
 
+    #? udaljenost satelita od sunca na pocetku
     x_0 = C_AU + x_g
     y_0 = 0  
 
+    #? Brzine satelita u odnosu na sunce na pocetku
     vx_h = V0x
     vy_h = V0y
 
+    #? Vremeski korak i vreme
     dt = 1e2
     T = 0
 
+    #? postavljamo pocetne koordinate satelita u odnosu na sunce
     x_h = x_0
     y_h = y_0
 
-    
+    #? ugao koji zemlja zaklapa sa x osom, koordinatni sistem fiksiran na sunce    
     lon = W*T
 
     niz_x = []
