@@ -17,7 +17,7 @@ C_M_SUNCE = 1.98e30
 
 def main():
     
-    brzine = np.arange(10, 25, 5)
+    brzine = np.arange(10, 15, 2)
 
     fig = plt.figure()
     fig.add_subplot(111, projection = "3d")
