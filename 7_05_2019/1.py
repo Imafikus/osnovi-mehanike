@@ -19,12 +19,14 @@ SEKUNDE_GODINA = 365.25 * 86400
 def main():
     
     
-    W = 2 * np.pi / SEKUNDE_GODINA
-    Vz = W * C_AU
+    W = 2 * np.pi / SEKUNDE_GODINA #? ugaona brzina zemlje
+    Vz = W * C_AU #? brzina zemlje
     
-    x_g = 50 * C_R_ZEMLJA
+    #? rastojanje satelita od zemlje
+    x_g = 50 * C_R_ZEMLJA 
     y_g = 0
 
+    #? Komponente brzine satelita
     V0y = Vz + 1000 #? km / s 30km/s je brzina zemlje
     V0x = 0
 
