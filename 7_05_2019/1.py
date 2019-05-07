@@ -73,9 +73,14 @@ def main():
 
         T = T + dt
         
-        #print(x_h, y_h)
-        niz_x.append(x_g)
-        niz_y.append(y_g)
+        # #?U odnosu na zemlju 
+        # niz_x.append(x_g)
+        # niz_y.append(y_g)
+
+        #? U odnosu na sunce
+        niz_x.append(x_g + x_z)
+        niz_y.append(y_g + y_z)
+
     
     plt.plot(niz_x, niz_y)
     plt.axis("equal")
